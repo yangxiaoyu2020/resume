@@ -1,11 +1,12 @@
-class Solution {
+ class Solution {
+    HashSet<String> set;
     public List<String> removeInvalidParentheses(String s) {
+        set = new HashSet();
         List<String> res = new ArrayList();
         if (isValid(s)) {
             res.add(s);
             return res;
         }
-        HashSet<String> set = new HashSet();
         set.add(s);
         while (!set.isEmpty()) {
             for (String tmpS: set) {
@@ -24,7 +25,6 @@ class Solution {
             }
             set = nextSet;
         }
-
         return res;
     }
 
@@ -38,6 +38,5 @@ class Solution {
             }
         }
         return countP == 0;
-
     }
 }
