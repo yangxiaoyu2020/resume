@@ -31,7 +31,7 @@
 - 3.同时在实现生成大量数据集的同时,独自实现任务模式下发启动镜像生成自动驾驶数据集
 - 4.同时利用多线程加快数据集的生成速度.在年底实现了对客户的顺利交付.
 
-(scale + playFrame + python + sql + elasticSearch)
+(scala + playFrame + python + sql + elasticSearch)
 
 ### ros 系统项目 
 - 1.我在此项目负责ros系统的安装部署到华为自己的操作系统以及华为的安全系统. 
