@@ -28,7 +28,11 @@ class Solution {
     }
 }
 ```
+## the key of this question is that using the dp[x][0] and dp[x][1] stand for the sell and buy,
+so the function of transform is that :
+> dp[i][0] = Math.max(dp[i-1][0], dp[i-1][1] + prices[i])
 
+> dp[i][1] = Math.max(dp[i-1][1], dp[i-1][0]* (k-1) - prices[i])
 
-
+> k means the times u can do 
 
